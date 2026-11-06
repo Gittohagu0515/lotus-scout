@@ -1,0 +1,1614 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Lotus GK 攻略ボード</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+:root{--bg:#f5f7fb;--card:#ffffff;--ink:#14213d;--ink2:#4a5670;--line:#d9dfea;--navy:#1f3864;--navy-soft:#c9d6ee;--heat:#c24e1f;--heat-soft:#fde9df;--btn:#14213d;--btn-ink:#ffffff;--chip:#e6eaf2;--warn:#f6d58a;
+--h0:#f6f5f2;--h1:#fbd3bd;--h2:#f39466;--h3:#c24e1f;--h4:#8f3714;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0e1424;--card:#172036;--ink:#e9eef8;--ink2:#a9b4c9;--line:#2a3550;--navy:#9fb6e6;--navy-soft:#c9d6ee;--heat:#f39466;--heat-soft:#3a2218;--btn:#e9eef8;--btn-ink:#0e1424;--chip:#26314d;--warn:#f6d58a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1424;--card:#172036;--ink:#e9eef8;--ink2:#a9b4c9;--line:#2a3550;--navy:#9fb6e6;--navy-soft:#c9d6ee;--heat:#f39466;--heat-soft:#3a2218;--btn:#e9eef8;--btn-ink:#0e1424;--chip:#26314d;--warn:#f6d58a;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;font-size:15px;line-height:1.7;margin:0}
+.font-display{font-family:"Dela Gothic One","Hiragino Sans","Noto Sans JP",sans-serif;font-weight:400}
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:20;background:var(--bg)}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important}}
+</style><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={corePlugins:{preflight:true}}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script>window.react=window.React;</script>
+<script src="https://unpkg.com/lucide-react@0.460.0/dist/umd/lucide-react.min.js"></script>
+<script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js"></script>
+</head>
+<body>
+<div id="root"><p style="padding:24px">読み込み中…</p></div>
+<script>window.DATA={
+ "match_overview": {
+  "target_opponent": "HC Lotus",
+  "user_perspective": "東邦大東邦中学校 ゴールキーパー（GK専用）",
+  "source_match": "2026/11/01 新人戦 HC若松 VS HC Lotus（前半・後半フル統合：Event 1〜114 / Attack 1〜102）",
+  "score_progression": {
+   "first_half": "Lotus 11 - 10 若松（エース#15が7得点、#13が10アシストで主導権を握る）",
+   "second_half_part_1": "Lotus 17 - 16 若松（後半①：#15→#13の高速縦突破で3得点）",
+   "second_half_part_2_and_3": "Lotus 19 - 22 若松（後半②03:34のno:85を最後に、試合終了まで約17分間・12ポゼッション連続無得点）"
+  },
+  "core_takeaway_for_toho_gk": "Lotusの得点はすべて『3バック（#15・#13・#14）の突破コースと時間帯（疲労度）によるシュートコースの固定化』に支配されている。対戦相手のGK（#1）は前半終盤から#15のインサイド突破（バウンド）を読み始め、後半中盤以降は『#13の右足側下（シューター左下）固定』『#15の7mスローの中段化』『PV#6の右手側（シューター左中/左下）固定』を完全に読み切って17分間無得点に封じた。東邦GKはこの『コース固定化の法則』を最初から適用して守る。"
+ },
+ "three_back_system_anatomy_for_gk": {
+  "summary": "HC Lotusの攻撃は、絶対的エース#15（LB/左利き）、第2のエース兼司令塔#13（CB/右利き）、長身右バック#14（RB/右利き）の3名で構成される。前半と後半で3名の役割分担が大きく変化するため、東邦GKは『誰が起点になり、どちらの方向へステップを切ったか』を見るだけで、シュートが飛んでくるコースを事前に2択以下に絞り込める。",
+  "phase_shift_mechanism": {
+   "前半の特徴": "#13は一切シュートを打たず（0本）、中央でボールを捌く純粋な司令塔に徹する（10アシスト＋7m誘発パス2本）。フィニッシュは『#13→#15の左45度突破（形L1：前半14本）』と『#13→#14の右45度インカット突破（形L2：前半3本＋7m獲得2回）』の2大ルートに集中する。",
+   "後半序盤（後半①）の変化": "前半に#15が警戒された裏を突き、今度は『#15がパス出し役になり、#13がトップスピードで左45度〜中央を縦に割る形（形L1派生）』で#13が一気に3得点を挙げる（no:65, 67, 71）。",
+   "後半中盤〜終盤（後半②・③）の変質": "#15が右45度へ回り込む突破（no:80, 82）や、#13→#14のインカットから中央ポスト#6へ落とす形（形L2派生：no:73, 87, 92, 102）を多用。そして攻撃が詰まると、#13が単独で左方向へステップを切って強引に割り込む形（形L3：no:75, 96, 104, 106, 110, 113内2本）に陥り、すべて同じコース（GK右足側下）に打って自滅する。"
+  },
+  "tactical_patterns": [
+   {
+    "code": "形L1",
+    "name": "左45度〜中央の主砲突破ルート（#13⇔#15連動）",
+    "sub_patterns": [
+     {
+      "type": "L1-A：エース#15の左45度『インサイド（中央寄り）』突破（前半の最多パターン）",
+      "mechanism": "#13からパスを受けた左利きの#15が、助走をつけて左45度から中央寄り（インサイド）へ割って入る（前半no:6, 16, 26, 29, 46, 52, 56, 58）。",
+      "gk_rule": "【鉄則：上段は来ない。低めのバウンドに備えろ】左利きの#15が左45度から中央側へ切り込んだ場合、体の構造上ボールが内側に入るため高いコースへは打てない。8本すべてが『中段〜低め（特にワンバウンドでのGK左足側下＝シューター右下、またはGK右足側下＝シューター左下）』に飛んでくる。GKはG1（1歩前）へ出て重心を低く保ち、両足でのローセーブに集中する（前半終盤no:52, 56, 58はすべてこれでGKセーブ）。"
+     },
+     {
+      "type": "L1-B：エース#15の左45度『アウトサイド（左外）』突破（100%ファー上確定パターン）",
+      "mechanism": "#13からパスを受けた#15が、左45度から外側（左サイド側）へスピードをつけて突破する（前半no:30, 50）。",
+      "gk_rule": "【鉄則：100%『GK左手側上（シューター右上＝ファー上）』へのダイレクトシュート】左利きの#15が左外へ割った時は、左腕がフリーになり角度が開くため、2本中2本とも『ダイレクトのジャンプシュートでGK左手側上（シューター右上）』へ流し込んでいる（一次速攻のno:20も同じくGK左手側上）。#15が左アウトへ割ったら、バウンドは来ない。GKはG1で左手を高く上げてファー上（左手側上）を完全に消すこと。"
+     },
+     {
+      "type": "L1-C：左利き#15の『右45度回り込み』インサイド突破＆PV#6落とし（後半の勝負手）",
+      "mechanism": "後半に入り、本来LBの#15が右45度へポジションを移し、#13→#14からのパスを助走つきで受けて得意の左腕で中央へ割る（後半no:80, 82）、または中央右寄りから切り込んでPV#6へ落とす（後半no:112）。",
+      "gk_rule": "#15が右45度から中央へ割って自らジャンプシュートを打つ際（no:80）は『正面高め（中上＝GKの顔面〜頭上）』に浮くため、G1で両手を顔面横に上げる。PV#6へ落とされた瞬間にG1で『右手側中段〜下』へ反応を切り替える。"
+     },
+     {
+      "type": "L1-D：#15起点→第2のエース#13のトップスピード縦突破＆高速QR（後半①の得点源）",
+      "mechanism": "#15からパスを受けた#13が、スピードに乗ったまま左45度〜中央の間を縦に割る（後半no:65, 71）、または失点直後のクイックリスタートでセンターラインからドリブルなしで一気に中央6mまで加速する（後半no:67）。",
+      "gk_rule": "失点直後はボールから絶対に目を離さず、#13の高速QR（no:67：GK右手側中段）に備えてすぐG2ラインに戻る。スピードに乗ったフリー突破時は『GK左足側下（no:65）』と『GK右足側下バウンド（no:71）』の低め両隅に足を残す。"
+     }
+    ]
+   },
+   {
+    "code": "形L2",
+    "name": "右45度#14起点・インカット3択ルート（前半のハイシュート＆後半TTO明け・6対5の最優先形）",
+    "sub_patterns": [
+     {
+      "type": "L2-A：長身#14の右45度インカット＆ハイシュート（前半型）",
+      "mechanism": "#13から右バック#14へ展開し、長身の#14が右45度から中央方向へ力強く踏み込んで高い打点のダイレクトシュート（前半no:8[7MW], 13[7MW], 22, 33, 37 / 後半no:63）またはアウト割りシュート（後半no:108）。",
+      "gk_rule": "【鉄則：#14には絶対にしゃがむな！両手を高く上げて『中上〜左手側上・中段』の壁を作れ】#14のシュートはバウンドや低めが1本もない（通算5本すべてが『高』または『中』のダイレクトシュート）。特に前半はGK頭上（中上：no:33）とGK左手側上（シューター右上：no:37）、後半はGK左手側中段（シューター右中：no:63, 108）に集中している。GKは手足を下げず、直立して顔面上〜左手側（シューター右側）を高く塞ぐこと。"
+     },
+     {
+      "type": "L2-B：#13→#14インカットからの『中央PV#6への落とし』（後半の最重要デザインプレー）",
+      "mechanism": "後半の数的優位（6対5：no:87）やタイムアウト明け（no:102）で最優先される形。#14が右45度から中央へ切り込んでから、6mラインのPV#6へパス（バウンド含む）を落とす（後半no:73, 87, 92, 102）。",
+      "gk_rule": "【鉄則：PV#6の倒れ込みシュートは100%『GK右手側（シューター左中・左下）』に来る】#14からPV#6にパスが落ちた瞬間、GKは1歩前に出て（G1）、自分の『右手側の中段〜右足側下（画面手前側）』に体を広げて待つ。PV#6は倒れ込みながら打つ際、3本中3本すべてGKの右手側（no:73右足下、no:92右手側中、no:102右手側中）にしか打てず、すべてセーブされている。"
+     },
+     {
+      "type": "L2-C：#13→#14からの『右ウイング#9への展開』",
+      "mechanism": "#14が右45度で引きつけて大外の右ウイング#9へ展開（後半no:85）。",
+      "gk_rule": "RW#9は右ウイングから飛び込んでファーサイド中段（GK右手側中段＝シューター左中）へ流し込んでくるため、ニア（左手側）に寄りすぎず右手側中段への反応を残す。"
+     }
+    ]
+   },
+   {
+    "code": "形L3",
+    "name": "第2のエース#13の単独左ステップ突破＆パッシブ時9mバウンド（後半中盤〜終盤の自滅パターン）",
+    "sub_patterns": [
+     {
+      "type": "L3-A：#13の左方向ステップからの強引突破・倒れ込みシュート",
+      "mechanism": "攻撃が詰まった場面や終盤、#13が中央または左サイド（#7とのパス交換含む）から左方向へステップを切って強引に割り込み、倒れ込みながら（またはランニングで）シュートを放つ（後半no:75, 96, 104, 110、およびno:113内の09:40・09:51）。",
+      "gk_rule": "【鉄則：100%『GKの右足側下（シューター左下）』にしか来ない！飛び上がらずに右足を出せ】#13が左へステップを切って体勢を崩しながら打つシュートは、後半6本連続で1ミリの狂いもなく『GKの右足側低め（シューター視点の左下）』に飛んでくる。東邦GKは1歩前に出て（G1）、絶対にジャンプせず、右足を地面に滑らせて出すだけで100%完封できる。"
+     },
+     {
+      "type": "L3-B：パッシブ予告時の9m中央バウンドシュート",
+      "mechanism": "パッシブ予告（審判の左手挙上）で追い込まれた際、#13が中央9mからステップシュート（バウンド）を放つ（後半no:106）。",
+      "gk_rule": "G2（ライン際）で構え、『GK右手側中段（シューター左中）』へ跳ねてくるバウンドシュートを落ち着いて両手でキャッチする。"
+     }
+    ]
+   }
+  ]
+ },
+ "seven_meter_throw_complete_guide_for_gk": {
+  "kicker": "#15（左利き・専任キッカー）",
+  "full_match_record": "全6本中 4ゴール・2セーブ（成功率 66.7%：前半2/2、後半2/4）",
+  "rhythm_and_form_habit": "後半の7mスローでは必ず『左手でワンドリブルを入れて一拍溜め、GKの重心が動いたのを見てから左腕を振る』一定のリズムを持つ。GKは7mラインとゴールの中間（G1）まで前に出て圧力をかけ、ワンドリブルの間に絶対に重心を先に動かさない（先飛びしない）ことが最大の攻略法。",
+  "chronological_6_shots_trajectory": [
+   {
+    "shot_order": "1本目（前半① no:9）",
+    "video_ref_10s_before": "前半① 05:04",
+    "impact_time": "前半① 05:14",
+    "gk_position": "G1",
+    "trajectory": "ダイレクト",
+    "course_gk_view": "GK右手側上（高）",
+    "course_shooter_view": "左上（高）",
+    "result": "G (2-2)",
+    "detail": "前に出て手を広げたGKの右上（シューター視点左上）へダイレクトの強いシュート。"
+   },
+   {
+    "shot_order": "2本目（前半① no:14）",
+    "video_ref_10s_before": "前半① 08:00",
+    "impact_time": "前半① 08:10",
+    "gk_position": "G1",
+    "trajectory": "バウンド",
+    "course_gk_view": "GK左足側下（低）",
+    "course_shooter_view": "右下（低）",
+    "result": "G (3-3)",
+    "detail": "1本目（GK右手側上・ダイレクト）とは完全に対角線となる逆サイドのGK左足側下（シューター右下）へワンバウンドで打ち分け。"
+   },
+   {
+    "shot_order": "3本目（後半① no:78）",
+    "video_ref_10s_before": "後半① 09:26（※09:36の10秒前）",
+    "impact_time": "後半① 09:36",
+    "gk_position": "G1",
+    "trajectory": "ダイレクト",
+    "course_gk_view": "GK左手側上（高）",
+    "course_shooter_view": "右上（高）",
+    "result": "G (17-16)",
+    "detail": "G1まで前に出たGKに対し、ワンドリブルから一拍溜めてGKの左手側上（シューター右上）へ速いダイレクトシュート。"
+   },
+   {
+    "shot_order": "4本目（後半② no:83）",
+    "video_ref_10s_before": "後半② 02:18",
+    "impact_time": "後半② 02:27",
+    "gk_position": "G1",
+    "trajectory": "ダイレクト",
+    "course_gk_view": "GK右足側下（低）",
+    "course_shooter_view": "左下（低）",
+    "result": "G (18-17)",
+    "detail": "3本目（GK左手側上）とは対角線上の逆コースとなるGK右足側下（シューター左下）へ、左手でワンドリブルを入れてからダイレクトシュート。"
+   },
+   {
+    "shot_order": "5本目（後半② no:88）【攻略成功・セーブ】",
+    "video_ref_10s_before": "後半② 04:08",
+    "impact_time": "後半② 04:17",
+    "gk_position": "G1",
+    "trajectory": "ダイレクト",
+    "course_gk_view": "GK左手側中段（中）",
+    "course_shooter_view": "右中（中）",
+    "result": "S (19-18維持)",
+    "detail": "左手でワンドリブルを入れてから左腕でGK左手側中段（シューター右中）へダイレクトシュート。前に出て構えていたGKがワンドリブルのリズムに完全に合わせ、左足と左手を上げてセーブ。"
+   },
+   {
+    "shot_order": "6本目（後半③ no:113）【攻略成功・セーブ】",
+    "video_ref_10s_before": "後半③ 07:44",
+    "impact_time": "後半③ 07:54",
+    "gk_position": "G1",
+    "trajectory": "ダイレクト",
+    "course_gk_view": "GK右手側中段（中）",
+    "course_shooter_view": "左中（中）",
+    "result": "S (19-21維持)",
+    "detail": "試合終盤の1分を切った場面。ワンドリブルを入れてからGK右手側中段（シューター左中）へダイレクトシュートを放つが、前に出たGKが右手でセーブ。"
+   }
+  ],
+  "toho_gk_7m_rule": "【7mスロー完全攻略法則】\n1. #15は『1本目と2本目（前半no:9→14）』『3本目と4本目（後半no:78→83）』のように、必ず【上コーナー（ダイレクト）⇔ 対角線の下コーナー】を交互に打ち分ける習性がある。直前に『上』へ決めたら次は対角線の『下』、直前に『下』へ決めたら次は『上』を第一警戒とする。\n2. 試合後半やプレッシャーのかかる場面（5本目・6本目）では、四隅を狙えずコースが『中段（GK左手側中段・右手側中段）』に甘くなる。G1（中間位置）まで前に出て、ワンドリブルの一拍溜めに我慢して中段に両手・半身のブロックを作れば確実に止まる。"
+ },
+ "player_by_player_gk_save_manuals": [
+  {
+   "player_id": "#15",
+   "name_and_role": "絶対的エース LB（左利き / 白ソックス・ピンク系シューズ）",
+   "full_match_shooting_summary": "通算19本（前半14本・後半5本） / 9ゴール（フィールド5G・7m 4G）・8セーブ・2枠外/ブロック",
+   "shot_map_gk_view_3x3_full_match": {
+    "GK左手側上 (シューター右上)": {
+     "total": "4G / 0S",
+     "breakdown": "前半no:20(G/FB1ダイレクト), 前半no:30(G/6m-Lアウト割りダイレクト), 前半no:50(G/6m-Lアウト割りダイレクト), 後半no:78(G/7mダイレクト)"
+    },
+    "GK中上 (シューター中上)": {
+     "total": "0G / 1S",
+     "breakdown": "後半no:80(S/6m-C突破ダイレクト→GK顔面セーブ)"
+    },
+    "GK右手側上 (シューター左上)": {
+     "total": "1G / 0S",
+     "breakdown": "前半no:9(G/7mダイレクト)"
+    },
+    "GK左手側中 (シューター右中)": {
+     "total": "0G / 2S",
+     "breakdown": "前半no:27(S/9m-Lミドルダイレクト), 後半no:88(S/7mダイレクト)"
+    },
+    "GK中央 (シューター中中)": {
+     "total": "0G / 1S",
+     "breakdown": "前半no:52(S/6m-Lイン割りダイレクト)"
+    },
+    "GK右手側中 (シューター左中)": {
+     "total": "0G / 3S",
+     "breakdown": "前半no:16(S/6m-Lイン割りダイレクト), 前半no:29(S/6m-Lイン割りダイレクト), 後半no:113(S/7mダイレクト)"
+    },
+    "GK左足側下 (シューター右下)": {
+     "total": "3G / 2S",
+     "breakdown": "前半no:14(G/7mバウンド), 前半no:26(G/6m-Cイン割りダイレクト), 前半no:46(G/6m-Lイン割りバウンド), 前半no:54(S/9m-Lミドルバウンド), 前半no:56(S/6m-Lイン割りバウンド)"
+    },
+    "GK中下 (シューター中下)": {
+     "total": "0G / 0S",
+     "breakdown": "該当なし"
+    },
+    "GK右足側下 (シューター左下)": {
+     "total": "1G / 1S",
+     "breakdown": "前半no:6(G/6m-Lイン割りバウンド), 前半no:58(S/6m-Cイン割りダイレクト低め左中〜左下), 後半no:83(G/7mダイレクト)"
+    },
+    "枠外・ブロック": {
+     "total": "2本（＋後半9m継続ブロック1本）",
+     "breakdown": "前半no:2(M/6m-Cクロスバー上枠外), 前半no:11(M/9m-L右外枠外), 前半no:24(B/9m-Cブロック→GK処理), 後半no:77内08:40(9m-Cブロック)"
+    }
+   },
+   "gk_action_rules": [
+    "【状況①：左45度から『アウト（左外）』へ割られた時 & 一次速攻（FB1）】→ 100%『GK左手側上（ファー上）』へダイレクトで飛んでくる（no:20, 30, 50で3/3ゴール）。バウンドは絶対にない。G1へ出て左手を高く上げ、左手側上コーナーを死守せよ。",
+    "【状況②：左45度から『インサイド（中央寄り）』へ割られた時】→ 上段は0本。すべて『中段〜低め（特にGK左足側下へのワンバウンド、またはGK右手側中〜右足側下）』に集まる（no:6, 16, 26, 29, 46, 52, 56, 58）。絶対に上へ飛ばず、G1で重心を下げて『左足側下へのバウンド』と『右手側中段』を待て（前半終盤はこれで3連続セーブ）。",
+    "【状況③：右45度〜中央を縦に割られた時】→ 6m中央からのジャンプシュートは『正面高め（中上＝顔面付近）』に浮く（no:80、前半QRのno:2もバー上枠外）。G1へ出て顔面〜頭上に両手を上げろ。",
+    "【状況④：9mからのミドルシュート】→ 決定力0%（4本打って0ゴール：枠外1・ブロック1・セーブ2）。打たれても『GK左手側中段（no:27）』か『GK左足側下への緩いバウンド（no:54）』しか来ないため、G2ライン際で余裕を持って処理できる。"
+   ]
+  },
+  {
+   "player_id": "#13",
+   "name_and_role": "第2のエース・司令塔 CB（右利き / 長身・白ソックス・白シューズ）",
+   "full_match_shooting_summary": "通算8本（前半0本・後半8本 ※他に後半no:113内の再開後2本とno:114内の1本もすべてGKセーブ） / 3ゴール・5セーブ（実質8セーブ） / 通算12アシスト",
+   "shot_map_gk_view_3x3_full_match": {
+    "GK左手側上〜右手側上（上段すべて）": {
+     "total": "0G / 0S",
+     "breakdown": "1試合を通じて上段（高コース）へのシュートは『0本』"
+    },
+    "GK左手側中〜GK中央": {
+     "total": "0G / 0S",
+     "breakdown": "該当なし"
+    },
+    "GK右手側中 (シューター左中)": {
+     "total": "1G / 1S",
+     "breakdown": "後半no:67(G/QR 6m-Cダイレクト), 後半no:106(S/パッシブ9m-Cステップバウンド)"
+    },
+    "GK左足側下 (シューター右下)": {
+     "total": "1G / 0S",
+     "breakdown": "後半no:65(G/6m-L縦突破ダイレクト)"
+    },
+    "GK中下 (シューター中下)": {
+     "total": "0G / 0S",
+     "breakdown": "該当なし"
+    },
+    "GK右足側下 (シューター左下)": {
+     "total": "1G / 4S（※実質1G / 6S）",
+     "breakdown": "後半no:71(G/6m-L縦突破バウンド), 後半no:75(S/6m-Lダイレクト), 後半no:96(S/6m-C倒れ込みダイレクト), 後半no:104(S/6m-L縦突破ダイレクト), 後半no:110(S/6m-C倒れ込みダイレクト), ※追加: 後半no:113内09:40(S/左下) & 09:51(S/左下)"
+    }
+   },
+   "gk_action_rules": [
+    "【最重要法則：#13に対しては『上段』を完全に捨てろ】1試合を通じて高いコースへのシュートは1本もない。すべてのシュートが『GK右足側下（シューター左下）』『GK右手側中段（シューター左中）』『GK左足側下（シューター右下）』の3箇所（特に右半身側）に集中している。",
+    "【状況①：左方向へステップを切って割り込んできた時・倒れ込み時（形L3）】→ 100%『GKの右足側下（シューター左下）』にしか来ない（no:71, 75, 96, 104, 110, 113内2本の7本すべてが同じコース）。GKは1歩前に出て（G1）、飛び上がらずに『右足』を地面に残して出すだけで100%止まる。",
+    "【状況②：前半および9mフリースロー再開時】→ 前半はシュート0本で100%パス（#15か#14への展開、またはno:41の右6m#6へのラストパス）。後半も9m再開時は打つフリをして足元のPV#6へバウンドパスを通す（no:77）ため、パスフェイクに釣られて早く飛ばないこと。"
+   ]
+  },
+  {
+   "player_id": "#14",
+   "name_and_role": "右バック RB（右利き / 長身・黒ロングソックス・白シューズ）",
+   "full_match_shooting_summary": "通算5本（前半3本・後半2本 ※他に7m獲得2回、ポスト直撃1本、GKセーブ後の自拾1本、DFブロック1本） / 3ゴール・2セーブ",
+   "shot_map_gk_view_3x3_full_match": {
+    "GK左手側上 (シューター右上)": {
+     "total": "1G / 0S",
+     "breakdown": "前半no:37(G/6m-R中央寄りジャンプダイレクト)"
+    },
+    "GK中上 (シューター中央・高)": {
+     "total": "1G / 0S",
+     "breakdown": "前半no:33(G/6m-R中央割りジャンプダイレクト)"
+    },
+    "GK右手側上 (シューター左上)": {
+     "total": "0G / 0S",
+     "breakdown": "該当なし"
+    },
+    "GK左手側中 (シューター右中)": {
+     "total": "1G / 1S",
+     "breakdown": "後半no:63(G/6m-Cインカット倒れ込みダイレクト), 後半no:108(S/6m-Rアウト割りダイレクト)"
+    },
+    "GK中央 (シューター中央・中)": {
+     "total": "0G / 1S",
+     "breakdown": "前半no:22(S/6m-Cインカットダイレクト→GK正面)"
+    },
+    "下段すべて（左足下・中下・右足下）": {
+     "total": "0G / 0S",
+     "breakdown": "1試合を通じて低いコース・バウンドシュートは『0本』"
+    }
+   },
+   "gk_action_rules": [
+    "【最重要法則：#13とは真逆！#14は『低め・バウンドが0本』。すべて中段〜上段のダイレクト】#14がシュート体勢に入ったら、足を上げるだけのローセーブ姿勢は厳禁（前半no:33, 37はG2で頭上・左上を抜かれている）。",
+    "【状況①：右45度から中央へインカットしてきた時】→ コースは『GK中上（頭上：no:33）』『GK左手側上（no:37）』『GK左手側中段（no:63）』『GK正面（no:22）』の4箇所（すべて中央〜GKの左手側・中高）に限定される。GKは自分の『左手側（上〜中段）と頭上』に両手を高く掲げて壁を作る。",
+    "【状況②：右45度から外（6m-R）へ流れた時】→ 右利きのため角度が完全に死に、『GK左手側中段（ニア中段＝シューター右中：no:108）』にしか打てない。G1へ出て左手でニア中段を塞げば確実に止まる。"
+   ]
+  },
+  {
+   "player_id": "#6 / #7 / #9 / #3",
+   "name_and_role": "ポスト（PV）＆ ウイング（LW / RW）陣",
+   "full_match_shooting_summary": "PV/RW #6：5本（2G・3S、7m獲得3回） / LW #7：2本（0G・2S） / RW #9：1本（1G） / LW #3：1本（0G・1M）",
+   "gk_action_rules": [
+    "【対 PV #6（ポスト）】完全フリーで左6mに流れた時（後半no:61）と前半の右6m走り込み（前半no:41）は決めたが、中央6mでパスを受けて『倒れ込みながら打つシュート（SH3）』は、後半3本すべてが『GKの右手側（no:73＝GK右足側下、no:92＝GK右手側中段、no:102＝GK右手側中段）』に固定化しており、G1へ出て右手側〜足元で待てば100%セーブできる。",
+    "【対 LW #7（後半出場の左ウイング）】後半2本（no:59, no:94 ※他にno:73内の06:26もセーブ）すべて、G1で角度を詰めたGKに対し『GK右手側（ニア中段・ニア上＝シューター左中・左上）』にしか打てず完封されている。左サイド展開時はG1でニア（右手側）を閉じて立てば完全に止まる。",
+    "【対 LW #3（前半出場の左ウイング）】前半no:48でG1のGKがニアを閉じたことで、ファー上（GK左手側上）を狙いすぎて大きく枠外へ外している。左ウイングは#3・#7ともに『G1でニアを閉じる』だけで無力化できる。",
+    "【対 RW #9（右ウイング）】後半no:85で右ウイングから『GK右手側中段（ファー中段＝シューター左中）』へダイレクトで決めている。右ウイング#9に対してはニア（左手側）を詰めすぎず、ファー中段（右手側）への反応を残すこと。"
+   ]
+  }
+ ],
+ "complete_chronological_lotus_attack_logs": {
+  "description": "前半（no:2〜58）および後半（no:59〜113）におけるHC Lotusの全攻撃イベント（計56イベント）の完全検証リスト。10秒前タイムスタンプ（後半①の未記載分はプレー発生10秒前で正確算出済）と東邦GK視点のコース・対応を網羅。",
+  "first_half_lotus_events": [
+   {
+    "no": 2,
+    "attack_no": 2,
+    "segment": "前半①",
+    "video_ref_10s_before": "前半① 02:20",
+    "impact_time": "前半① 02:30 (前半00:28)",
+    "phase": "QR",
+    "pattern": "なし (#2→#13→#15)",
+    "actor": "#15",
+    "location_and_type": "6m-C / SH3(倒れ込み) / ダイレクト",
+    "course_gk_view": "クロスバー上枠外（高）",
+    "course_shooter_view": "なし（高・枠外）",
+    "gk_pos": "G1",
+    "result": "M (0-1)",
+    "fact_and_gk_note": "失点直後のQRから#15が中央ドリブル突破。G1で圧力をかけると接触しながらのシュートが上に浮く。"
+   },
+   {
+    "no": 4,
+    "attack_no": 4,
+    "segment": "前半①",
+    "video_ref_10s_before": "前半① 03:10",
+    "impact_time": "前半① 03:20 (前半01:18)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15",
+    "location_and_type": "9m-C / ファンブル",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TO (0-1)",
+    "fact_and_gk_note": "#15が中央9mでパスを受ける際にファンブルしターンオーバー。"
+   },
+   {
+    "no": 6,
+    "attack_no": 6,
+    "segment": "前半①",
+    "video_ref_10s_before": "前半① 03:57",
+    "impact_time": "前半① 04:07 (前半02:05)",
+    "phase": "SO",
+    "pattern": "形L1 (#2→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-L / SH1(ジャンプ) / バウンド",
+    "course_gk_view": "GK右足側下（低）",
+    "course_shooter_view": "左下（低）",
+    "gk_pos": "G1",
+    "result": "G (1-2)",
+    "fact_and_gk_note": "9m再開から#13→#15。助走をつけた#15が左中間をインサイド突破し、6m-LからワンバウンドでGK右足側下（ニア下）へ得点。"
+   },
+   {
+    "no": 8,
+    "attack_no": 8,
+    "segment": "前半①",
+    "video_ref_10s_before": "前半① 04:41",
+    "impact_time": "前半① 04:51 (前半02:49)",
+    "phase": "SO",
+    "pattern": "形L2 (#15→#13→#14)",
+    "actor": "#14 (Key pass: #13)",
+    "location_and_type": "6m-R / 突破時被ファウル",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "7MW (1-2)",
+    "fact_and_gk_note": "#13→#14で右バックから中央へ1対1突破し7mスロー獲得。"
+   },
+   {
+    "no": 9,
+    "attack_no": 8,
+    "segment": "前半①",
+    "video_ref_10s_before": "前半① 05:04",
+    "impact_time": "前半① 05:14 (前半03:12)",
+    "phase": "7M",
+    "pattern": "7mスロー (1本目)",
+    "actor": "#15",
+    "location_and_type": "7m / SH2 / ダイレクト",
+    "course_gk_view": "GK右手側上（高）",
+    "course_shooter_view": "左上（高）",
+    "gk_pos": "G1",
+    "result": "G (2-2)",
+    "fact_and_gk_note": "#15の7mスロー1本目。G1で構えたGKの右手側上（シューター左上）へダイレクトで成功。"
+   },
+   {
+    "no": 11,
+    "attack_no": 10,
+    "segment": "前半①",
+    "video_ref_10s_before": "前半① 06:39",
+    "impact_time": "前半① 06:49 (前半04:47)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "9m-L / SH1(ミドル) / ダイレクト",
+    "course_gk_view": "GK左ポスト外（低・枠外）",
+    "course_shooter_view": "右外（低・枠外）",
+    "gk_pos": "G2",
+    "result": "M (2-3)",
+    "fact_and_gk_note": "9m再開から#13→#15が9m-LからDF越しにダイレクトシュートを打つも枠外。"
+   },
+   {
+    "no": 13,
+    "attack_no": 12,
+    "segment": "前半①",
+    "video_ref_10s_before": "前半① 07:42",
+    "impact_time": "前半① 07:52 (前半05:50)",
+    "phase": "SO",
+    "pattern": "形L2 (#15→#13→#14)",
+    "actor": "#14 (Key pass: #13)",
+    "location_and_type": "6m-R / インカット被ファウル",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "7MW (2-3)",
+    "fact_and_gk_note": "#14が右バックから中央側へカットインし7mスロー獲得。"
+   },
+   {
+    "no": 14,
+    "attack_no": 12,
+    "segment": "前半①",
+    "video_ref_10s_before": "前半① 08:00",
+    "impact_time": "前半① 08:10 (前半06:08)",
+    "phase": "7M",
+    "pattern": "7mスロー (2本目)",
+    "actor": "#15",
+    "location_and_type": "7m / SH2 / バウンド",
+    "course_gk_view": "GK左足側下（低）",
+    "course_shooter_view": "右下（低）",
+    "gk_pos": "G1",
+    "result": "G (3-3)",
+    "fact_and_gk_note": "#15の7mスロー2本目。1本目（GK右手側上ダイレクト）の対角線となるGK左足側下（シューター右下）へワンバウンドで成功。"
+   },
+   {
+    "no": 16,
+    "attack_no": 14,
+    "segment": "前半①",
+    "video_ref_10s_before": "前半① 08:44",
+    "impact_time": "前半① 08:54 (前半06:52)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-L / SH1 / ダイレクト",
+    "course_gk_view": "GK右手側中段（中）",
+    "course_shooter_view": "左中（中）",
+    "gk_pos": "G1",
+    "result": "S (3-3)",
+    "fact_and_gk_note": "#15が左から中央へ走り込み6m-Lからダイレクトシュート。G1で構えたGKが右手側中段（ニア中）をセーブ。"
+   },
+   {
+    "no": 18,
+    "attack_no": 16,
+    "segment": "前半①末尾",
+    "video_ref_10s_before": "前半① 09:55",
+    "impact_time": "前半① 10:05 (前半08:03)",
+    "phase": "SO",
+    "pattern": "形L2 (#15→#13→#14)",
+    "actor": "#14",
+    "location_and_type": "6m-C / パスミス",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TO (3-4)",
+    "fact_and_gk_note": "#14が右から中央へ割ってパスを出すもカットされターンオーバー。"
+   },
+   {
+    "no": 20,
+    "attack_no": 18,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 00:12",
+    "impact_time": "前半② 00:22 (前半08:35)",
+    "phase": "FB1",
+    "pattern": "一次速攻 (#14→#15)",
+    "actor": "#15 (Assist: #14)",
+    "location_and_type": "FB / SH1 / ダイレクト",
+    "course_gk_view": "GK左手側上（高）",
+    "course_shooter_view": "右上（高）",
+    "gk_pos": "G1",
+    "result": "G (4-4)",
+    "fact_and_gk_note": "#14のインターセプトから#15が独走し、ダイレクトでGK左手側上（シューター右上）へ得点。"
+   },
+   {
+    "no": 22,
+    "attack_no": 20,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 01:13",
+    "impact_time": "前半② 01:23 (前半09:36)",
+    "phase": "SO",
+    "pattern": "形L2 (#15→#13→#14)",
+    "actor": "#14 (Assist: #13)",
+    "location_and_type": "6m-C / SH2 / ダイレクト",
+    "course_gk_view": "GK中央（中）",
+    "course_shooter_view": "中央（中）",
+    "gk_pos": "G1",
+    "result": "S (4-4)",
+    "fact_and_gk_note": "#14が右から中央へ割って6m-Cからダイレクトシュート。G1で構えたGKが正面（中央）でセーブ。"
+   },
+   {
+    "no": 24,
+    "attack_no": 22,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 02:13",
+    "impact_time": "前半② 02:23 (前半10:36)",
+    "phase": "SO",
+    "pattern": "なし (#2→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "9m-C / SH1 / ディフレクション",
+    "course_gk_view": "ブロック減速→GK処理",
+    "course_shooter_view": "なし",
+    "gk_pos": "G2",
+    "result": "B (4-4)",
+    "fact_and_gk_note": "9m再開後、#15の9m-Cミドルがブロックで減速し、G2のGKが処理してマイボールへ。"
+   },
+   {
+    "no": 26,
+    "attack_no": 24,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 03:19",
+    "impact_time": "前半② 03:29 (前半11:42)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-C / SH1 / ダイレクト",
+    "course_gk_view": "GK左足側下（低）",
+    "course_shooter_view": "右下（低）",
+    "gk_pos": "G1",
+    "result": "G (5-4)",
+    "fact_and_gk_note": "#13からパスを受けた#15が中央へインサイド突破し、6m-CからGK左足側下（シューター右下）へダイレクトで得点。"
+   },
+   {
+    "no": 27,
+    "attack_no": 25,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 03:44",
+    "impact_time": "前半② 03:54 (前半12:07)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "9m-L / SH2 / ダイレクト",
+    "course_gk_view": "GK左手側中段（中）",
+    "course_shooter_view": "右上（中〜高）",
+    "gk_pos": "G2",
+    "result": "S (5-4)",
+    "fact_and_gk_note": "#15が9m-Lからダイレクトミドル。G2のGKが左手側で弾き出してセーブ。"
+   },
+   {
+    "no": 29,
+    "attack_no": 27,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 05:10",
+    "impact_time": "前半② 05:20 (前半13:33)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15",
+    "location_and_type": "6m-L / SH3 / ダイレクト",
+    "course_gk_view": "GK右手側中段（中）",
+    "course_shooter_view": "左中（中）",
+    "gk_pos": "G1",
+    "result": "S (5-5 ※9m継続)",
+    "fact_and_gk_note": "#15が左からインサイド突破し6m-Lでシュート。G1のGKが右手側中段（左中）で当てる（9m再開へ）。"
+   },
+   {
+    "no": 30,
+    "attack_no": 27,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 05:23",
+    "impact_time": "前半② 05:33 (前半13:46)",
+    "phase": "SO",
+    "pattern": "形L1 (#2→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-L / SH1(アウト割り) / ダイレクト",
+    "course_gk_view": "GK左手側上（高）",
+    "course_shooter_view": "右上（高）",
+    "gk_pos": "G1",
+    "result": "G (6-5)",
+    "fact_and_gk_note": "【#15アウト割り典型例①】9m再開から#13→#15が左アウト側を割り、6m-Lからファー上（GK左手側上）へダイレクトで得点。"
+   },
+   {
+    "no": 33,
+    "attack_no": 29,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 06:31",
+    "impact_time": "前半② 06:41 (前半14:54)",
+    "phase": "SO",
+    "pattern": "形L2 (#15→#13→#14)",
+    "actor": "#14 (Assist: #13)",
+    "location_and_type": "6m-R / SH1 / ダイレクト",
+    "course_gk_view": "GK中上（頭上・高）",
+    "course_shooter_view": "中央（高）",
+    "gk_pos": "G2",
+    "result": "G (7-6)",
+    "fact_and_gk_note": "#14が右バックから中央へ力強く割り込み、G2のGKの頭上（中上）へダイレクトシュートで得点。"
+   },
+   {
+    "no": 35,
+    "attack_no": 31,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 07:16",
+    "impact_time": "前半② 07:26 (前半15:39)",
+    "phase": "SO",
+    "pattern": "なし (#13)",
+    "actor": "#13",
+    "location_and_type": "W-L方向パスミス",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TO (7-6)",
+    "fact_and_gk_note": "モップ掛け再開直後、#13の左サイドへのパスがサイドラインを割る。"
+   },
+   {
+    "no": 37,
+    "attack_no": 33,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 08:26",
+    "impact_time": "前半② 08:36 (前半16:49)",
+    "phase": "SO",
+    "pattern": "形L2 (#2→#13→#14)",
+    "actor": "#14 (Assist: #13)",
+    "location_and_type": "6m-R / SH1 / ダイレクト",
+    "course_gk_view": "GK左手側上（高）",
+    "course_shooter_view": "右上（高）",
+    "gk_pos": "G2",
+    "result": "G (8-7)",
+    "fact_and_gk_note": "9m再開後、#13→#14が右から中央寄りに踏み込み、6m-RからGK左手側上（シューター右上）へ高いジャンプシュートで得点。"
+   },
+   {
+    "no": 39,
+    "attack_no": 35,
+    "segment": "前半②",
+    "video_ref_10s_before": "前半② 09:09",
+    "impact_time": "前半② 09:19 (前半17:32)",
+    "phase": "FB2",
+    "pattern": "なし (#13→#14)",
+    "actor": "#14",
+    "location_and_type": "6m-C / ポストパスカット",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TO (8-7)",
+    "fact_and_gk_note": "#14が中央6mのポストへパスを入れるもカットされターンオーバー。"
+   },
+   {
+    "no": 41,
+    "attack_no": 37,
+    "segment": "前半②〜③",
+    "video_ref_10s_before": "前半② 10:11",
+    "impact_time": "前半② 10:21 / 前半③ 00:00 (前半18:34)",
+    "phase": "SO",
+    "pattern": "なし (#15→#13→#6)",
+    "actor": "#6 (Assist: #13)",
+    "location_and_type": "6m-R / SH1 / ダイレクト",
+    "course_gk_view": "UNK",
+    "course_shooter_view": "UNK",
+    "gk_pos": "G1",
+    "result": "G (9-7)",
+    "fact_and_gk_note": "#13がルーズボールを拾って中央へドリブル前進し、右6mへ走り込んだノーマークの#6へパスして得点。"
+   },
+   {
+    "no": 43,
+    "attack_no": 39,
+    "segment": "前半③",
+    "video_ref_10s_before": "前半③ 01:07",
+    "impact_time": "前半③ 01:17 (前半19:51)",
+    "phase": "SO",
+    "pattern": "形L1 (#2→#13→#15)",
+    "actor": "#15",
+    "location_and_type": "6m-C / ファンブル",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TO (9-8)",
+    "fact_and_gk_note": "00:34の右サイド#6シュート（GKセーブ・9m再開）後、01:17に#15が中央へ割ってファンブルしターンオーバー。"
+   },
+   {
+    "no": 45,
+    "attack_no": 40,
+    "segment": "前半③",
+    "video_ref_10s_before": "前半③ 01:26",
+    "impact_time": "前半③ 01:36 (前半20:10)",
+    "phase": "NONE",
+    "pattern": "タイムアウト",
+    "actor": "lotusベンチ",
+    "location_and_type": "TTO (01:36〜02:49)",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TT (9-9)",
+    "fact_and_gk_note": "9-9に追いつかれた直後にTTO。ここから#2に代わって#9（RW）が出場し、#6がPVへ移動。"
+   },
+   {
+    "no": 46,
+    "attack_no": 41,
+    "segment": "前半③",
+    "video_ref_10s_before": "前半③ 02:55",
+    "impact_time": "前半③ 03:05 (前半20:26)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-L / SH3(イン割り倒れ込み) / バウンド",
+    "course_gk_view": "GK左足側下（低）",
+    "course_shooter_view": "右下（低）",
+    "gk_pos": "G1",
+    "result": "G (10-9)",
+    "fact_and_gk_note": "TTO明けの勝負手。#15が左から中央側へ鋭くインサイド突破し、倒れ込みながらワンバウンドでGK左足側下（ファー下）へ得点。"
+   },
+   {
+    "no": 48,
+    "attack_no": 43,
+    "segment": "前半③",
+    "video_ref_10s_before": "前半③ 04:10",
+    "impact_time": "前半③ 04:20 (前半21:41)",
+    "phase": "SO",
+    "pattern": "左ウイング展開 (#14→#15→#13→#3)",
+    "actor": "#3 (Assist: #13)",
+    "location_and_type": "W-L / SH1 / ダイレクト",
+    "course_gk_view": "GK左手側上外（枠外）",
+    "course_shooter_view": "右上外側（枠外）",
+    "gk_pos": "G1",
+    "result": "M (10-10)",
+    "fact_and_gk_note": "左サイド#3へ展開。GKがG1でニアを閉じて構えたため、#3がファー上を狙って枠外ミス。"
+   },
+   {
+    "no": 50,
+    "attack_no": 45,
+    "segment": "前半③",
+    "video_ref_10s_before": "前半③ 05:01",
+    "impact_time": "前半③ 05:11 (前半22:32)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-L / SH1(アウト割り) / ダイレクト",
+    "course_gk_view": "GK左手側上（高）",
+    "course_shooter_view": "右上（高）",
+    "gk_pos": "G1",
+    "result": "G (11-10)",
+    "fact_and_gk_note": "【#15アウト割り典型例②】no:30と全く同じ形。#15が左アウト側へスピード突破し、6m-LからダイレクトでGK左手側上（ファー上）へ得点。"
+   },
+   {
+    "no": 52,
+    "attack_no": 47,
+    "segment": "前半③",
+    "video_ref_10s_before": "前半③ 05:41",
+    "impact_time": "前半③ 05:51 (前半23:12)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-L / SH3(イン割り倒れ込み) / ダイレクト",
+    "course_gk_view": "GK中央（中）",
+    "course_shooter_view": "中央（中）",
+    "gk_pos": "G1",
+    "result": "S (11-10)",
+    "fact_and_gk_note": "#15が左45度からインサイド突破し倒れ込みシュート。体勢が崩れ、G1のGKが中央（中段）でセーブ。"
+   },
+   {
+    "no": 54,
+    "attack_no": 49,
+    "segment": "前半③",
+    "video_ref_10s_before": "前半③ 06:25",
+    "impact_time": "前半③ 06:35 (前半23:56)",
+    "phase": "SO",
+    "pattern": "形L1 (#6→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "9m-L / SH1(ミドル) / バウンド",
+    "course_gk_view": "GK左足側下（低）",
+    "course_shooter_view": "右下（低）",
+    "gk_pos": "G2",
+    "result": "S (11-10)",
+    "fact_and_gk_note": "9m再開後、#15が9m-Lからワンバウンドのミドルシュート。G2のGKが左足側下（右下）で余裕を持ってセーブ。"
+   },
+   {
+    "no": 56,
+    "attack_no": 51,
+    "segment": "前半③",
+    "video_ref_10s_before": "前半③ 07:16",
+    "impact_time": "前半③ 07:26 (前半24:47)",
+    "phase": "SO",
+    "pattern": "形L1 (#6→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-L / SH3(イン割り倒れ込み) / バウンド",
+    "course_gk_view": "GK左足側下（低）",
+    "course_shooter_view": "右下（低）",
+    "gk_pos": "G1",
+    "result": "S (11-10)",
+    "fact_and_gk_note": "【#15イン割り攻略例】9m再開から#15が左45度をインサイド突破し6m-Lからバウンドシュート。G1のGKがファー下（左足側下）のバウンドコースを完全に読んでセーブ。"
+   },
+   {
+    "no": 58,
+    "attack_no": 53,
+    "segment": "前半③",
+    "video_ref_10s_before": "前半③ 09:28",
+    "impact_time": "前半③ 09:38 (前半24:52)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-C / SH3(イン割り倒れ込み) / ダイレクト",
+    "course_gk_view": "GK右手側中〜下（低）",
+    "course_shooter_view": "左中（低）",
+    "gk_pos": "G1",
+    "result": "S (11-10)",
+    "fact_and_gk_note": "前半ラスト攻撃。#15が中央へインサイド突破し6m-Cから低めシュート。G1のGKが右手側（左中・低）でセーブ（前半終盤#15を4本連続ストップ）。"
+   }
+  ],
+  "second_half_lotus_events": [
+   {
+    "no": 59,
+    "attack_no": 54,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 00:38（※00:48の10秒前）",
+    "impact_time": "後半① 00:48 (00:03-00:49)",
+    "phase": "SO",
+    "pattern": "P3 左ウイング展開 (#14→#13→#7)",
+    "actor": "#7 (Assist: #13)",
+    "location_and_type": "W-L / SH1 / ダイレクト",
+    "course_gk_view": "GK右手側中段（中）",
+    "course_shooter_view": "左中（中）",
+    "gk_pos": "G1",
+    "result": "S (11-10)",
+    "fact_and_gk_note": "00:45の#14インカットシュートをGKが弾き、#14回収→#13→左ウイング#7へ。G1で角度を詰めたGKが右手側中段（ニア中）を体でセーブ。"
+   },
+   {
+    "no": 61,
+    "attack_no": 56,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 01:25（※01:35の10秒前）",
+    "impact_time": "後半① 01:37 (01:22-01:38)",
+    "phase": "SO",
+    "pattern": "P2 リバウンド二次攻撃 (#15→#13→#6)",
+    "actor": "#6 (Assist: #13)",
+    "location_and_type": "6m-L / SH1 / ダイレクト",
+    "course_gk_view": "GK左手側中段（中）",
+    "course_shooter_view": "右中（中）",
+    "gk_pos": "G2",
+    "result": "G (12-11)",
+    "fact_and_gk_note": "01:28の#14中央ジャンプシュートがポスト直撃→#15回収→#13が左6mライン際の完全フリーのPV#6へバウンドパス。G2で左手側中段（右中）へ決められる。"
+   },
+   {
+    "no": 63,
+    "attack_no": 58,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 02:28（※02:38の10秒前）",
+    "impact_time": "後半① 02:40 (02:18-02:41)",
+    "phase": "SO",
+    "pattern": "形L2 (#13→#14)",
+    "actor": "#14 (Assist: #13)",
+    "location_and_type": "6m-C / SH3(インカット倒れ込み) / ダイレクト",
+    "course_gk_view": "GK左手側中段（中）",
+    "course_shooter_view": "右中（中）",
+    "gk_pos": "G2",
+    "result": "G (13-12)",
+    "fact_and_gk_note": "9m再開後、#13からパスを受けた#14が右45度から中央へ大股ステップでインカットし、6m中央から倒れ込みながらGK左手側中段（右中）へ得点。"
+   },
+   {
+    "no": 65,
+    "attack_no": 60,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 03:23（※03:33の10秒前）",
+    "impact_time": "後半① 03:35 (03:19-03:37)",
+    "phase": "SO",
+    "pattern": "形L1 (#15→#13)",
+    "actor": "#13 (Assist: #15)",
+    "location_and_type": "6m-L / SH1 / ダイレクト",
+    "course_gk_view": "GK左足側下（低）",
+    "course_shooter_view": "右下（低）",
+    "gk_pos": "G2",
+    "result": "G (14-12)",
+    "fact_and_gk_note": "#15からスピードに乗ってパスを受けた#13が左45度〜中央を縦に突破し、6m-Lから高く跳んでGK左足側下（ファー下＝右下）へ叩き込む。"
+   },
+   {
+    "no": 67,
+    "attack_no": 62,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 04:11（※04:21の10秒前）",
+    "impact_time": "後半① 04:24 (04:20-04:26)",
+    "phase": "QR",
+    "pattern": "形L1 高速QR (#15→#13)",
+    "actor": "#13 (Assist: #15)",
+    "location_and_type": "6m-C / SH1 / ダイレクト",
+    "course_gk_view": "GK右手側中段（中）",
+    "course_shooter_view": "左中（中）",
+    "gk_pos": "G2",
+    "result": "G (15-13)",
+    "fact_and_gk_note": "失点直後のQR。#15からパスを受けた#13がセンターラインからドリブルなしで一気に中央6mまで加速し、GK右手側中段（左中）へ得点。"
+   },
+   {
+    "no": 69,
+    "attack_no": 64,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 04:45（※04:55の10秒前）",
+    "impact_time": "後半① 04:57 (04:41-04:58)",
+    "phase": "SO",
+    "pattern": "形L2 (#13→#14)",
+    "actor": "#14",
+    "location_and_type": "オーバーステップ反則",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TO (15-14)",
+    "fact_and_gk_note": "#14が右45度からインサイドへ切り込むも囲まれてバイオレーション。"
+   },
+   {
+    "no": 71,
+    "attack_no": 66,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 05:21（※05:31の10秒前）",
+    "impact_time": "後半① 05:33 (05:15-05:36)",
+    "phase": "SO",
+    "pattern": "形L1 (#15→#13)",
+    "actor": "#13 (Assist: #15)",
+    "location_and_type": "6m-L / SH1 / バウンド",
+    "course_gk_view": "GK右足側下（低）",
+    "course_shooter_view": "左下（低）",
+    "gk_pos": "G2",
+    "result": "G (16-14)",
+    "fact_and_gk_note": "#15からパスを受けた#13が左45度を割り、6m-LからGK右足側下（ニア下＝左下）へワンバウンドで得点。"
+   },
+   {
+    "no": 73,
+    "attack_no": 68,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 06:25（※06:35の10秒前）",
+    "impact_time": "後半① 06:37 (06:11-06:39)",
+    "phase": "SO",
+    "pattern": "形L2 (#13→#14→PV#6)",
+    "actor": "#6 (Assist: #14)",
+    "location_and_type": "6m-R / SH3(倒れ込み) / ダイレクト",
+    "course_gk_view": "GK右足側下（低）",
+    "course_shooter_view": "左下（低）",
+    "gk_pos": "G1",
+    "result": "S (16-15)",
+    "fact_and_gk_note": "06:26の左ウイング#7シュートをGKセーブ→二次攻撃で#13→#14が右45度から仕掛けPV#6へパス。#6が倒れ込みながらGK右足側下（左下）へ打つが、G1のGKが足でセーブ。"
+   },
+   {
+    "no": 75,
+    "attack_no": 70,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 07:31（※07:41の10秒前）",
+    "impact_time": "後半① 07:43 (07:15-07:45)",
+    "phase": "SO",
+    "pattern": "形L1 (#14→#13)",
+    "actor": "#13 (Assist: #14)",
+    "location_and_type": "6m-L / SH2(ランニング) / ダイレクト",
+    "course_gk_view": "GK右足側下（低）",
+    "course_shooter_view": "左下（低）",
+    "gk_pos": "G1",
+    "result": "S (16-16)",
+    "fact_and_gk_note": "【#13左下固定化の始まり（1本目）】9m再開後、#14からパスを受けた#13が中央から左45度へステップを切って割り、6m-Lから低いランニングシュートをGK右足側下（左下）へ放つが、G1のGKが足を出してセーブ。"
+   },
+   {
+    "no": 77,
+    "attack_no": 72,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 09:00（※09:10の10秒前）",
+    "impact_time": "後半① 09:12 (08:26-09:15)",
+    "phase": "SO",
+    "pattern": "P2 9m再開ポストパス (#13→PV#6)",
+    "actor": "#6 (Key pass: #13)",
+    "location_and_type": "6m-C / SH3 / 被ファウル",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "G1",
+    "result": "7MW (16-16)",
+    "fact_and_gk_note": "9m再開時、#13が中央で前を向いて6mのPV#6へバウンドパス。#6の反転シュート時に7mスロー獲得。"
+   },
+   {
+    "no": 78,
+    "attack_no": 72,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 09:26（※09:36の10秒前）",
+    "impact_time": "後半① 09:36 (09:24-09:38)",
+    "phase": "7M",
+    "pattern": "7mスロー (通算3本目)",
+    "actor": "#15",
+    "location_and_type": "7m / SH2 / ダイレクト",
+    "course_gk_view": "GK左手側上（高）",
+    "course_shooter_view": "右上（高）",
+    "gk_pos": "G1",
+    "result": "G (17-16)",
+    "fact_and_gk_note": "#15がワンドリブルから一拍溜めて、G1のGKの左手側上（シューター右上）へ速いシュートを決める。"
+   },
+   {
+    "no": 80,
+    "attack_no": 74,
+    "segment": "後半①",
+    "video_ref_10s_before": "後半① 10:17（※10:27の10秒前）",
+    "impact_time": "後半① 10:29 (10:14-10:32)",
+    "phase": "SO",
+    "pattern": "P1 右45度〜中央割り (#13→#15)",
+    "actor": "#15 (Assist: #13)",
+    "location_and_type": "6m-C / SH1 / ダイレクト",
+    "course_gk_view": "GK中上（顔面・高）",
+    "course_shooter_view": "中上（高）",
+    "gk_pos": "G1",
+    "result": "S (17-16)",
+    "fact_and_gk_note": "9m再開後、#13からパスを受けた#15が右45度〜中央の間を縦に割って6m中央からジャンプシュート。G1のGKが両手を上げて顔面（頭部）付近でセーブ。"
+   },
+   {
+    "no": 82,
+    "attack_no": 76,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 01:45",
+    "impact_time": "後半② 01:55 (01:08-01:57)",
+    "phase": "SO",
+    "pattern": "形L1 右45度回り込み (#13→#14→#15)",
+    "actor": "#15 (Key pass: #14)",
+    "location_and_type": "6m-R / SH1 / 被プッシング",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "G1",
+    "result": "7MW (17-17)",
+    "fact_and_gk_note": "9m再開後、#13→#14から右45度へ回り込んだ左利きの#15へパス。#15が左腕側にボールを持って縦に突破し7mスロー獲得。"
+   },
+   {
+    "no": 83,
+    "attack_no": 76,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 02:18",
+    "impact_time": "後半② 02:27 (02:23-02:30)",
+    "phase": "7M",
+    "pattern": "7mスロー (通算4本目)",
+    "actor": "#15",
+    "location_and_type": "7m / SH2 / ダイレクト",
+    "course_gk_view": "GK右足側下（低）",
+    "course_shooter_view": "左下（低）",
+    "gk_pos": "G1",
+    "result": "G (18-17)",
+    "fact_and_gk_note": "#15が左手でワンドリブルを入れてから、G1のGKの右足側下（シューター左下）へダイレクトシュートを決める。"
+   },
+   {
+    "no": 85,
+    "attack_no": 78,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 03:24",
+    "impact_time": "後半② 03:34 (03:11-03:36)",
+    "phase": "SO",
+    "pattern": "形L2 右ウイング展開 (#13→#14→RW#9)",
+    "actor": "#9 (Assist: #14)",
+    "location_and_type": "W-R / SH1 / ダイレクト",
+    "course_gk_view": "GK右手側中段（中）",
+    "course_shooter_view": "左中（ファー中段）",
+    "gk_pos": "G1",
+    "result": "G (19-18) ※Lotus最終得点",
+    "fact_and_gk_note": "#13→#14が右45度で引きつけ右サイド#9へ展開。#9がW-Rからファー中段（GK右手側中段）へジャンプシュートを決める（※以降Lotusは試合終了まで無得点）。"
+   },
+   {
+    "no": 86,
+    "attack_no": 79,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 03:42",
+    "impact_time": "後半② 03:54 (03:40-03:55)",
+    "phase": "NONE",
+    "pattern": "形L1 トランジション突破 (#15)",
+    "actor": "#15",
+    "location_and_type": "9m-L / 2分間退場誘発",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "2M (19-18)",
+    "fact_and_gk_note": "相手ターンオーバー直後、#15が中央左からスピード突破を図り相手#3の2分間退場を誘発。"
+   },
+   {
+    "no": 87,
+    "attack_no": 79,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 03:55",
+    "impact_time": "後半② 04:05 (04:01-04:07)",
+    "phase": "SO (6対5)",
+    "pattern": "形L2 数的優位ポスト落とし (#13→#14→PV#6)",
+    "actor": "#6 (Key pass: #14)",
+    "location_and_type": "6m-C / SH3 / ラインクロス7m",
+    "course_gk_view": "GKセーブ（7m判定）",
+    "course_shooter_view": "なし",
+    "gk_pos": "G1",
+    "result": "7MW (19-18)",
+    "fact_and_gk_note": "数的優位（6対5）での再開。#13→#14が右45度から仕掛け中央6mのPV#6へパス。#6の倒れ込みシュートをGKが止めるもDFラインクロスで7m判定。"
+   },
+   {
+    "no": 88,
+    "attack_no": 79,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 04:08",
+    "impact_time": "後半② 04:17 (04:10-04:20)",
+    "phase": "7M",
+    "pattern": "7mスロー (通算5本目)",
+    "actor": "#15",
+    "location_and_type": "7m / SH2 / ダイレクト",
+    "course_gk_view": "GK左手側中段（中）",
+    "course_shooter_view": "右中（中）",
+    "gk_pos": "G1",
+    "result": "S (19-18)",
+    "fact_and_gk_note": "【#15 7m攻略例①】左手でワンドリブルを入れてからGK左手側中段（シューター右中）へダイレクトシュート。G1で前に出て構えていたGKが左足と左手を上げてセーブ。"
+   },
+   {
+    "no": 90,
+    "attack_no": 81,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 05:35",
+    "impact_time": "後半② 05:44 (05:20-05:47)",
+    "phase": "SO",
+    "pattern": "P3 左ウイング展開パスミス (#15→#7)",
+    "actor": "#15",
+    "location_and_type": "W-L方向パスミス",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TO (19-18)",
+    "fact_and_gk_note": "9m再開後、左利きの#15が中央左から左腕で左サイド#7へパスを出すが背中側にずれてサイドラインを割る。"
+   },
+   {
+    "no": 92,
+    "attack_no": 83,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 06:38",
+    "impact_time": "後半② 06:48 (06:22-06:50)",
+    "phase": "SO",
+    "pattern": "形L2 ポスト落とし (#13→#14→PV#6)",
+    "actor": "#6 (Assist: #14)",
+    "location_and_type": "6m-C / SH3(倒れ込み) / ダイレクト",
+    "course_gk_view": "GK右手側中段（中）",
+    "course_shooter_view": "左中（中）",
+    "gk_pos": "G1",
+    "result": "S (19-19)",
+    "fact_and_gk_note": "【PV#6攻略例①】9m再開後、#13→#14が右45度から中央へ切り込み6mのPV#6へパス。#6が倒れ込みながらGK右手側中段（シューター左中）へ打つが、G1のGKがキャッチしてセーブ。"
+   },
+   {
+    "no": 94,
+    "attack_no": 85,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 07:19",
+    "impact_time": "後半② 07:29 (06:58-07:31)",
+    "phase": "SO",
+    "pattern": "P3 左ウイング展開 (#14→#13→#15→LW#7)",
+    "actor": "#7 (Assist: #15)",
+    "location_and_type": "W-L / SH1 / ダイレクト",
+    "course_gk_view": "GK右手側上（高）",
+    "course_shooter_view": "左上（ニア上）",
+    "gk_pos": "G1",
+    "result": "S (19-19)",
+    "fact_and_gk_note": "左ウイング#7がニア上（GK右手側上）へジャンプシュートを放つが、G1で立って角度を詰めていたGKが両手で弾いてセーブ。"
+   },
+   {
+    "no": 96,
+    "attack_no": 87,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 07:58",
+    "impact_time": "後半② 08:08 (07:44-08:11)",
+    "phase": "SO",
+    "pattern": "形L3 (#14→#13左ステップ突破)",
+    "actor": "#13 (Assist: #14)",
+    "location_and_type": "6m-C / SH3(倒れ込み) / ダイレクト",
+    "course_gk_view": "GK右足側下（低）",
+    "course_shooter_view": "左下（低）",
+    "gk_pos": "G1",
+    "result": "S (19-19)",
+    "fact_and_gk_note": "【#13左下固定化（2本目）】#14からパスを受けた#13が中央から左方向へステップを切って突破し、6m中央から倒れ込みシュート。GK右足側下（左下）へ行き、G1のGKが右足を出してセーブ。"
+   },
+   {
+    "no": 99,
+    "attack_no": 89,
+    "segment": "後半②",
+    "video_ref_10s_before": "後半② 10:30",
+    "impact_time": "後半② 10:40 (10:23-10:40)",
+    "phase": "SO",
+    "pattern": "P3 左ウイング展開パスカット (#13→#15→#7)",
+    "actor": "#15",
+    "location_and_type": "W-L方向被インターセプト",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TO (19-20)",
+    "fact_and_gk_note": "9m再開後、#13からパスを受けた左利きの#15が左サイド#7へパスを出そうとするが、ジャンプブロック・インターセプトされる。"
+   },
+   {
+    "no": 101,
+    "attack_no": 91,
+    "segment": "後半③",
+    "video_ref_10s_before": "後半③ 00:55",
+    "impact_time": "後半③ 01:05 (00:07-01:05)",
+    "phase": "NONE",
+    "pattern": "タイムアウト",
+    "actor": "lotusベンチ",
+    "location_and_type": "TTO (試合時計19:29)",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "なし",
+    "result": "TT (19-20)",
+    "fact_and_gk_note": "00:52に#14の右45度ジャンプシュートがブロック枠外となった後、01:05にlotusがTTOを請求。"
+   },
+   {
+    "no": 102,
+    "attack_no": 91,
+    "segment": "後半③",
+    "video_ref_10s_before": "後半③ 02:11",
+    "impact_time": "後半③ 02:21 (02:05-02:25)",
+    "phase": "SO",
+    "pattern": "形L2 TTO明けデザインプレー (#13→#14→PV#6)",
+    "actor": "#6 (Assist: #14)",
+    "location_and_type": "6m-C / SH3(倒れ込み) / ダイレクト",
+    "course_gk_view": "GK右手側中段（中）",
+    "course_shooter_view": "左中（中）",
+    "gk_pos": "G1",
+    "result": "S (19-20)",
+    "fact_and_gk_note": "【PV#6攻略例②】TTO明けの最初のプレー。#13→#14が右45度から中央へ切り込み、中央6mのPV#6へバウンドパス。#6が倒れ込みながらGK右手側中段（左中）へ打つが、G1で前に出たGKが体に当ててセーブ。"
+   },
+   {
+    "no": 104,
+    "attack_no": 93,
+    "segment": "後半③",
+    "video_ref_10s_before": "後半③ 02:57",
+    "impact_time": "後半③ 03:07 (02:56-03:10)",
+    "phase": "SO",
+    "pattern": "形L3 (#13⇔#7パス交換から左縦突破)",
+    "actor": "#13 (Assist: #7)",
+    "location_and_type": "6m-L / SH1 / ダイレクト",
+    "course_gk_view": "GK右足側下（低）",
+    "course_shooter_view": "左下（低）",
+    "gk_pos": "G1",
+    "result": "S (19-20)",
+    "fact_and_gk_note": "【#13左下固定化（3本目）】左サイドに開いた#13が#7とパス交換し、左45度から縦に突破して6m-Lからジャンプシュート。またしてもGK右足側下（ニア下＝左下）へ行き、G1のGKが右足を出してセーブ。"
+   },
+   {
+    "no": 106,
+    "attack_no": 95,
+    "segment": "後半③",
+    "video_ref_10s_before": "後半③ 03:58",
+    "impact_time": "後半③ 04:08 (03:25-04:11)",
+    "phase": "SO (パッシブ)",
+    "pattern": "形L3 パッシブ追い込まれ (#14→#13)",
+    "actor": "#13 (Assist: #14)",
+    "location_and_type": "9m-C / SH2(ステップ) / バウンド",
+    "course_gk_view": "GK右手側中段（中）",
+    "course_shooter_view": "左中（中）",
+    "gk_pos": "G2",
+    "result": "S (19-20)",
+    "fact_and_gk_note": "04:05にパッシブ予告。追い込まれた#13が中央9mからステップシュート（バウンド）をGK右手側中段（左中）へ放つが、G2のGKが落ち着いてキャッチセーブ。"
+   },
+   {
+    "no": 108,
+    "attack_no": 97,
+    "segment": "後半③",
+    "video_ref_10s_before": "後半③ 04:34",
+    "impact_time": "後半③ 04:44 (04:21-04:48)",
+    "phase": "SO",
+    "pattern": "形L2 右アウト割り (#13→#14)",
+    "actor": "#14 (Assist: #13)",
+    "location_and_type": "6m-R / SH1 / ダイレクト",
+    "course_gk_view": "GK左手側中段（中）",
+    "course_shooter_view": "右中（ニア中段）",
+    "gk_pos": "G1",
+    "result": "S (19-20)",
+    "fact_and_gk_note": "【#14アウト割り攻略例】#13からパスを受けた右利きの#14が右45度から外（右）へ突破し6m-Rからシュート。角度が狭まりニア中段（GK左手側中段＝右中）へ打つしかなく、G1のGKが両手でブロックセーブ。"
+   },
+   {
+    "no": 110,
+    "attack_no": 99,
+    "segment": "後半③",
+    "video_ref_10s_before": "後半③ 05:13",
+    "impact_time": "後半③ 05:23 (05:01-05:25)",
+    "phase": "SO",
+    "pattern": "形L3 (#15→#13中央カットイン)",
+    "actor": "#13 (Assist: #15)",
+    "location_and_type": "6m-C / SH3(倒れ込み) / ダイレクト",
+    "course_gk_view": "GK右足側下（低）",
+    "course_shooter_view": "左下（低）",
+    "gk_pos": "G1",
+    "result": "S (19-20)",
+    "fact_and_gk_note": "【#13左下固定化（4本目）】#15からパスを受けた#13が中央へカットインし、6m中央から倒れ込みシュートをGK右足側下（左下）へ放つが、G1のGKが右足でセーブ。"
+   },
+   {
+    "no": 112,
+    "attack_no": 101,
+    "segment": "後半③",
+    "video_ref_10s_before": "後半③ 07:37",
+    "impact_time": "後半③ 07:47 (06:12-07:49)",
+    "phase": "SO",
+    "pattern": "形L1 #15突破からのポスト落とし (#15→PV#6)",
+    "actor": "#6 (Key pass: #15)",
+    "location_and_type": "6m-C / SH3 / 被ファウル",
+    "course_gk_view": "なし",
+    "course_shooter_view": "なし",
+    "gk_pos": "G1",
+    "result": "7MW (19-21)",
+    "fact_and_gk_note": "残り1分を切り、#15が中央右寄りからスピードをつけて切り込み中央6mのPV#6へパス。7mスロー獲得。"
+   },
+   {
+    "no": 113,
+    "attack_no": 101,
+    "segment": "後半③",
+    "video_ref_10s_before": "後半③ 07:44",
+    "impact_time": "後半③ 07:54 / 09:40 / 09:51",
+    "phase": "7M & SO",
+    "pattern": "7mスロー(通算6本目) ＆ 再開後の#13左突破2連発",
+    "actor": "#15 (7M) / #13 (再開後2本)",
+    "location_and_type": "7m(SH2) & 6m-L突破2本",
+    "course_gk_view": "7m: GK右手側中段(左中) / #13の2本: ともにGK右足側下(左下)",
+    "course_shooter_view": "7m: 左中 / #13の2本: 左下",
+    "gk_pos": "G1",
+    "result": "S (19-21) ※3本すべてセーブ",
+    "fact_and_gk_note": "【#15 7m攻略例② ＆ #13左下固定化（5・6本目）】07:54に#15がワンドリブルからGK右手側中段（左中）へ7mスローを打つが、G1のGKが右手でセーブ。さらに再開後の09:40と09:51に#13が左45度から突破して2本ともGK右足側下（左下）へ打つが、ともにGKが右足でセーブ（さらにno:114内の10:18の#13の中央シュートもGKセーブで試合終了）。"
+   }
+  ]
+ }
+};window.OFFSETS={
+ "_note": "YouTube 元動画での各ファイルの開始秒。3分割のファイルは継ぎ目で重なっている（次のファイルの最初のフレームが前のファイルの最後の数秒と同一＝差0.0）。前半1本目の開始＝YouTube 0秒（Yasu さんの基準 t=140s→2分30秒の #15 得点＝01 02:30.0 と一致）",
+ "video_id": {"01": "xpV7EHyMtbo", "02": "xpV7EHyMtbo", "03": "xpV7EHyMtbo", "04": "aeo-WZs4pp0", "05": "aeo-WZs4pp0", "06": "aeo-WZs4pp0"},
+ "offset": {"01": 0.0, "02": 616.274, "03": 1238.173, "04": 0.0, "05": 633.073, "06": 1274.939},
+ "overlap_sec": {"01-02": 2.97, "02-03": 0.33, "04-05": 5.47, "05-06": 2.13}
+}
+;</script>
+<script>/* Lotus GK ダッシュボード（東邦 GK 専用）。データは window.DATA（ヤスさん作成のスカウティングデータをそのまま） */
+(function () {
+  const { useState, useMemo } = React;
+  const html = htm.bind(React.createElement);
+  const L = window.LucideReact || {};
+  const Icon = ({ name, size = 18, cls = "" }) => {
+    const C = L[name];
+    return C ? React.createElement(C, { size, className: cls, "aria-hidden": true }) : null;
+  };
+  const D = window.DATA;
+  const OFF = window.OFFSETS;
+
+  // ---------- 動画リンク（"前半① 05:04" など → YouTube の秒数）
+  const SEG = { "前半①": "01", "前半②": "02", "前半③": "03", "後半①": "04", "後半②": "05", "後半③": "06" };
+  function videoLink(ref) {
+    const m = String(ref || "").match(/(前半|後半)([①②③])\s*(\d+):(\d+)/);
+    if (!m) return null;
+    const v = SEG[m[1] + m[2]];
+    const t = Math.max(0, Math.floor(OFF.offset[v] + Number(m[3]) * 60 + Number(m[4])));
+    return { url: `https://www.youtube.com/watch?v=${OFF.video_id[v]}&t=${t}s`, label: ref };
+  }
+  const VBtn = ({ refText, small }) => {
+    const l = videoLink(refText);
+    if (!l) return html`<span class="text-[12px] text-[var(--ink2)]">${refText}</span>`;
+    return html`<a href=${l.url} target="_blank" rel="noopener"
+      class="inline-flex items-center gap-2 rounded-full bg-[var(--btn)] text-[var(--btn-ink)] no-underline ${small ? "px-3 py-1 text-[12.5px]" : "px-3.5 py-1.5 text-[13.5px]"} font-bold focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[var(--heat)]">
+      <span class="grid place-items-center w-6 h-6 rounded-full bg-[var(--heat)] text-white"><${Icon} name="Play" size=${12} /></span>
+      <span>${l.label}${String(l.label).includes("10秒前") ? "" : html`<span class="font-normal opacity-80">（10秒前から）</span>`}</span></a>`;
+  };
+
+  // ---------- 結果の色
+  const resKey = (r) => String(r || "").trim().split(/[\s(（]/)[0];
+  const RES_STYLE = {
+    G: "bg-[var(--heat)] text-white", S: "bg-[var(--navy)] text-[var(--bg)]", M: "bg-[var(--chip)] text-[var(--ink)]",
+    B: "bg-[var(--chip)] text-[var(--ink)]", TO: "bg-[var(--chip)] text-[var(--ink)]", "7MW": "bg-[var(--warn)] text-[var(--ink)]",
+    TT: "bg-[var(--chip)] text-[var(--ink2)]", "2M": "bg-[var(--warn)] text-[var(--ink)]",
+  };
+  const RES_NAME = { G: "得点", S: "GKセーブ", M: "枠外", B: "ブロック", TO: "ターンオーバー", "7MW": "7m獲得", TT: "タイムアウト", "2M": "2分間退場誘発" };
+  const ResChip = ({ r }) => {
+    const k = resKey(r);
+    return html`<span class="inline-block rounded-md px-2 py-0.5 text-[12.5px] font-bold ${RES_STYLE[k] || "bg-[var(--chip)]"}">${RES_NAME[k] ? RES_NAME[k] + "　" : ""}${r}</span>`;
+  };
+
+  // ---------- 3×3（GK 視点）
+  const CELLS = [
+    ["GK左手側上", "シューター右上", 0, 0], ["GK中上", "シューター中上", 1, 0], ["GK右手側上", "シューター左上", 2, 0],
+    ["GK左手側中", "シューター右中", 0, 1], ["GK中央", "シューター中中", 1, 1], ["GK右手側中", "シューター左中", 2, 1],
+    ["GK左足側下", "シューター右下", 0, 2], ["GK中下", "シューター中下", 1, 2], ["GK右足側下", "シューター左下", 2, 2],
+  ];
+  function cellOfKey(k) {
+    const s = String(k);
+    if (s.includes("〜") || s.includes("すべて")) return null;
+    for (const c of CELLS) if (s.startsWith(c[0])) return c;
+    return null;
+  }
+  const gNum = (total) => { const m = String(total).match(/(\d+)\s*G/); return m ? Number(m[1]) : 0; };
+  const sNum = (total) => { const m = String(total).match(/(\d+)\s*S/); return m ? Number(m[1]) : 0; };
+  const HEAT = ["var(--h0)", "var(--h1)", "var(--h2)", "var(--h3)", "var(--h4)"];
+
+  function GoalGrid({ map, marks }) {
+    // map: { key: {total, breakdown} }  marks: [{cell:[c,r], label}]
+    const byPos = {};
+    if (map) for (const [k, v] of Object.entries(map)) { const c = cellOfKey(k); if (c) byPos[c[2] + "," + c[3]] = { k, ...v }; }
+    return html`<div class="grid gap-1.5">
+      <div class="flex justify-between text-[12px] text-[var(--ink2)] font-bold"><span>← 自分（GK）の左手側</span><span>GKから見た向き</span><span>右手側 →</span></div>
+      <div class="grid grid-cols-3 gap-1 p-1.5 rounded-lg" style=${{ background: "repeating-linear-gradient(90deg,#c0392b 0 18px,#ffffff 18px 36px)" }}>
+        ${CELLS.map((c) => {
+          const e = byPos[c[2] + "," + c[3]];
+          const g = e ? gNum(e.total) : 0;
+          const mk = (marks || []).filter((m) => m.cell[0] === c[2] && m.cell[1] === c[3]);
+          const bg = mk.length ? (mk.some((m) => m.goal) ? "var(--h3)" : "var(--navy-soft)") : HEAT[Math.min(g, 4)];
+          const dark = (!mk.length && g >= 3) || mk.some((m) => m.goal);
+          return html`<div class="rounded-md p-1.5 min-h-[74px] flex flex-col justify-between" style=${{ background: bg, color: dark ? "#ffffff" : "#1f1f1e" }}>
+            <div class="text-[11.5px] font-bold leading-tight">${c[0].replace("GK", "")}<span class="font-normal opacity-80">（${c[1]}）</span></div>
+            ${e ? html`<div class="text-[15px] font-bold leading-tight">${e.total}</div>` : null}
+            ${mk.map((m) => html`<div class="text-[12px] font-bold leading-tight">${m.label}</div>`)}
+          </div>`;
+        })}
+      </div>
+      <div class="flex justify-between text-[11.5px] text-[var(--ink2)]"><span>上＝高い / 下＝低い（足もと）</span><span>色がこいほど得点されている</span></div>
+    </div>`;
+  }
+
+  function MapList({ map }) {
+    return html`<div class="grid gap-2">
+      ${Object.entries(map).map(([k, v]) => html`<div class="rounded-lg border border-[var(--line)] p-2.5">
+        <div class="flex flex-wrap items-baseline gap-x-2"><b class="text-[14px]">${k}</b><span class="font-bold text-[var(--heat)]">${v.total}</span></div>
+        <div class="text-[13px] text-[var(--ink2)] mt-0.5">${v.breakdown}</div>
+      </div>`)}
+    </div>`;
+  }
+
+  // ---------- 共通の部品
+  const Card = ({ children, cls = "" }) => html`<div class="rounded-2xl border border-[var(--line)] bg-[var(--card)] p-4 grid gap-3 ${cls}">${children}</div>`;
+  const H2 = ({ icon, children }) => html`<h2 class="flex items-center gap-2 text-[22px] font-display m-0"><${Icon} name=${icon} size=${22} cls="text-[var(--heat)]" />${children}</h2>`;
+  const Rule = ({ text }) => html`<div class="rounded-xl bg-[var(--heat-soft)] p-3 text-[14.5px] leading-relaxed"><${Icon} name="Hand" size=${16} cls="inline -mt-1 mr-1 text-[var(--heat)]" />${text}</div>`;
+  function Acc({ title, sub, children, open }) {
+    const [o, setO] = useState(!!open);
+    return html`<div class="rounded-xl border border-[var(--line)] bg-[var(--card)]">
+      <button type="button" onClick=${() => setO(!o)} aria-expanded=${o}
+        class="w-full text-left flex items-start gap-2 p-3 focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[var(--heat)] rounded-xl">
+        <span class="mt-0.5"><${Icon} name=${o ? "ChevronDown" : "ChevronRight"} size=${18} /></span>
+        <span class="grid"><b class="text-[15.5px]">${title}</b>${sub ? html`<span class="text-[12.5px] text-[var(--ink2)]">${sub}</span>` : null}</span>
+      </button>
+      ${o ? html`<div class="px-3 pb-3 grid gap-3">${children}</div>` : null}
+    </div>`;
+  }
+  const KV = ({ k, v }) => html`<div class="grid grid-cols-[6.5em_1fr] gap-2 text-[14px]"><span class="text-[var(--ink2)]">${k}</span><span class="min-w-0">${v}</span></div>`;
+
+  // ---------- タブ1：概要
+  function Overview() {
+    const o = D.match_overview;
+    return html`<div class="grid gap-4">
+      <${Card}>
+        <${H2} icon="ClipboardList">試合と目的<//>
+        <${KV} k="相手" v=${o.target_opponent} />
+        <${KV} k="使う人" v=${o.user_perspective} />
+        <${KV} k="元の試合" v=${o.source_match} />
+      <//>
+      <${Card}>
+        <${H2} icon="Timer">スコアの流れ<//>
+        <${KV} k="前半" v=${o.score_progression.first_half} />
+        <${KV} k="後半①" v=${o.score_progression.second_half_part_1} />
+        <${KV} k="後半②③" v=${o.score_progression.second_half_part_2_and_3} />
+      <//>
+      <${Card}>
+        <${H2} icon="Shield">東邦 GK へのいちばん大事なこと<//>
+        <${Rule} text=${o.core_takeaway_for_toho_gk} />
+      <//>
+      <${Card}>
+        <${H2} icon="Grid3x3">コース表記の決まり<//>
+        <p class="m-0 text-[14px]">ゴールの9マスは、東邦の GK 自身から見た向き（左手側・右手側・左足側・右足側）で書き、かっこの中にシューターから見た向きを書いています。</p>
+        <${GoalGrid} map=${null} />
+      <//>
+    </div>`;
+  }
+
+  // ---------- タブ2：3バック解剖
+  function ThreeBack() {
+    const t = D.three_back_system_anatomy_for_gk;
+    return html`<div class="grid gap-4">
+      <${Card}><${H2} icon="Users">3バックのしくみ<//><p class="m-0 text-[14.5px] leading-relaxed">${t.summary}</p><//>
+      <${Card}>
+        <${H2} icon="TrendingUp">前半と後半で変わる役割<//>
+        ${Object.entries(t.phase_shift_mechanism).map(([k, v]) => html`<div class="grid gap-1"><b class="text-[15px]">${k}</b><p class="m-0 text-[14px] leading-relaxed">${v}</p></div>`)}
+      <//>
+      ${t.tactical_patterns.map((p, i) => html`<${Acc} title=${p.code + "　" + p.name} sub=${p.sub_patterns.length + "つの形"} open=${i === 0}>
+        ${p.sub_patterns.map((s) => html`<div class="rounded-xl border border-[var(--line)] p-3 grid gap-2">
+          <b class="text-[14.5px]">${s.type}</b>
+          <div class="text-[13.5px] leading-relaxed"><span class="font-bold text-[var(--ink2)]">動き：</span>${s.mechanism}</div>
+          <${Rule} text=${s.gk_rule} />
+        </div>`)}
+      <//>`)}
+    </div>`;
+  }
+
+  // ---------- タブ3：選手別
+  function Players() {
+    const P = D.player_by_player_gk_save_manuals;
+    const [i, setI] = useState(0);
+    const p = P[i];
+    return html`<div class="grid gap-4">
+      <div class="flex flex-wrap gap-2" role="tablist" aria-label="選手">
+        ${P.map((x, k) => html`<button type="button" role="tab" aria-selected=${k === i} onClick=${() => setI(k)}
+          class="rounded-full px-4 py-1.5 text-[15px] font-bold border ${k === i ? "bg-[var(--heat)] text-white border-[var(--heat)]" : "bg-[var(--card)] border-[var(--line)]"} focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[var(--heat)]">${x.player_id}</button>`)}
+      </div>
+      <${Card}>
+        <div class="flex items-baseline gap-3 flex-wrap"><span class="font-display text-[34px] leading-none text-[var(--heat)]">${p.player_id}</span><b class="text-[16px]">${p.name_and_role}</b></div>
+        <${KV} k="シュート" v=${p.full_match_shooting_summary} />
+      <//>
+      ${p.shot_map_gk_view_3x3_full_match ? html`<${Card}>
+        <${H2} icon="Grid3x3">GK から見た着弾マップ（1試合）<//>
+        <${GoalGrid} map=${p.shot_map_gk_view_3x3_full_match} />
+        <b class="text-[14px]">マスごとの中身（全部）</b>
+        <${MapList} map=${p.shot_map_gk_view_3x3_full_match} />
+      <//>` : null}
+      <${Card}>
+        <${H2} icon="Hand">GK の動き方<//>
+        ${p.gk_action_rules.map((r) => html`<${Rule} text=${r} />`)}
+      <//>
+    </div>`;
+  }
+
+  // ---------- タブ4：7m
+  const COURSE_CELL = (s) => { for (const c of CELLS) if (String(s).startsWith(c[0])) return [c[2], c[3]]; const m = { "GK左手側中段": [0, 1], "GK右手側中段": [2, 1] }; for (const k in m) if (String(s).startsWith(k)) return m[k]; return null; };
+  function Seven() {
+    const s = D.seven_meter_throw_complete_guide_for_gk;
+    const marks = s.chronological_6_shots_trajectory.map((x, k) => ({ cell: COURSE_CELL(x.course_gk_view), label: `${k + 1}本目 ${resKey(x.result) === "G" ? "得点" : "セーブ"}`, goal: resKey(x.result) === "G" })).filter((m) => m.cell);
+    return html`<div class="grid gap-4">
+      <${Card}>
+        <${H2} icon="Target">7mスロー<//>
+        <${KV} k="キッカー" v=${s.kicker} />
+        <${KV} k="結果" v=${s.full_match_record} />
+        <${KV} k="リズムとくせ" v=${s.rhythm_and_form_habit} />
+      <//>
+      <${Card}>
+        <${H2} icon="Grid3x3">6本のコース（GK から見た向き）<//>
+        <${GoalGrid} map=${null} marks=${marks} />
+      <//>
+      ${s.chronological_6_shots_trajectory.map((x) => html`<${Card}>
+        <div class="flex items-center justify-between flex-wrap gap-2"><b class="text-[16px]">${x.shot_order}</b><${ResChip} r=${x.result} /></div>
+        <${KV} k="コース" v=${html`<b>${x.course_gk_view}</b><span class="text-[var(--ink2)]">（シューター視点：${x.course_shooter_view}）</span>`} />
+        <${KV} k="GK の位置" v=${x.gk_position} />
+        <${KV} k="軌道" v=${x.trajectory} />
+        <${KV} k="放った時刻" v=${x.impact_time} />
+        <p class="m-0 text-[14px] leading-relaxed">${x.detail}</p>
+        <div><${VBtn} refText=${x.video_ref_10s_before} /></div>
+      <//>`)}
+      <${Card}>
+        <${H2} icon="ShieldCheck">7m の攻略法則<//>
+        ${String(s.toho_gk_7m_rule).split("\n").map((l) => html`<p class="m-0 text-[14.5px] leading-relaxed">${l}</p>`)}
+      <//>
+    </div>`;
+  }
+
+  // ---------- タブ5：全攻撃ログ
+  function Logs() {
+    const LG = D.complete_chronological_lotus_attack_logs;
+    const [half, setHalf] = useState("all");
+    const [actor, setActor] = useState("all");
+    const [res, setRes] = useState("all");
+    const all = useMemo(() => [...LG.first_half_lotus_events.map((e) => ({ ...e, h: "前半" })), ...LG.second_half_lotus_events.map((e) => ({ ...e, h: "後半" }))], []);
+    const actorKey = (e) => { const m = String(e.actor).match(/#\d+/); return m ? m[0] : "その他"; };
+    const actors = [...new Set(all.map(actorKey))];
+    const results = [...new Set(all.map((e) => resKey(e.result)))];
+    const list = all.filter((e) => (half === "all" || e.h === half) && (actor === "all" || actorKey(e) === actor) && (res === "all" || resKey(e.result) === res));
+    const Chip = ({ on, onClick, children }) => html`<button type="button" onClick=${onClick} aria-pressed=${on}
+      class="rounded-full px-3 py-1 text-[13.5px] font-bold border ${on ? "bg-[var(--btn)] text-[var(--btn-ink)] border-[var(--btn)]" : "bg-[var(--card)] border-[var(--line)]"} focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[var(--heat)]">${children}</button>`;
+    return html`<div class="grid gap-4">
+      <${Card}>
+        <p class="m-0 text-[14px] leading-relaxed">${LG.description}</p>
+        <div class="grid gap-2">
+          <div class="flex flex-wrap gap-2"><span class="text-[13px] text-[var(--ink2)] w-12">前後半</span>${["all", "前半", "後半"].map((h) => html`<${Chip} on=${half === h} onClick=${() => setHalf(h)}>${h === "all" ? "全部" : h}<//>`)}</div>
+          <div class="flex flex-wrap gap-2"><span class="text-[13px] text-[var(--ink2)] w-12">選手</span><${Chip} on=${actor === "all"} onClick=${() => setActor("all")}>全員<//>${actors.map((a) => html`<${Chip} on=${actor === a} onClick=${() => setActor(a)}>${a}<//>`)}</div>
+          <div class="flex flex-wrap gap-2"><span class="text-[13px] text-[var(--ink2)] w-12">結果</span><${Chip} on=${res === "all"} onClick=${() => setRes("all")}>全部<//>${results.map((r) => html`<${Chip} on=${res === r} onClick=${() => setRes(r)}>${RES_NAME[r] || r}<//>`)}</div>
+        </div>
+        <div class="text-[13px] text-[var(--ink2)]">表示中 ${list.length} 件 / 全 ${all.length} 件（前半 ${LG.first_half_lotus_events.length}・後半 ${LG.second_half_lotus_events.length}）</div>
+      <//>
+      ${list.map((e) => html`<div class="rounded-2xl border border-[var(--line)] bg-[var(--card)] p-3.5 grid gap-2">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <b class="text-[15px]">no:${e.no}<span class="font-normal text-[var(--ink2)] text-[12.5px]">（攻撃 ${e.attack_no}・${e.segment}）</span></b>
+          <${ResChip} r=${e.result} />
+        </div>
+        <div class="text-[15px] font-bold">${e.actor}<span class="font-normal text-[13px] text-[var(--ink2)]">　${e.phase}　${e.pattern}</span></div>
+        <${KV} k="コース" v=${html`<b>${e.course_gk_view}</b><span class="text-[var(--ink2)]">（シューター視点：${e.course_shooter_view}）</span>`} />
+        <${KV} k="場所・種類" v=${e.location_and_type} />
+        <${KV} k="GK の位置" v=${e.gk_pos} />
+        <${KV} k="放った時刻" v=${e.impact_time} />
+        <p class="m-0 text-[14px] leading-relaxed">${e.fact_and_gk_note}</p>
+        <div><${VBtn} refText=${e.video_ref_10s_before} small=${true} /></div>
+      </div>`)}
+    </div>`;
+  }
+
+  // ---------- 全体
+  const TABS = [["overview", "概要", "ClipboardList", Overview], ["threeback", "3バック", "Users", ThreeBack], ["players", "選手別", "UserRound", Players], ["seven", "7m", "Target", Seven], ["logs", "全攻撃ログ", "ListVideo", Logs]];
+  function App() {
+    const initial = (location.hash || "").replace("#", "");
+    const [tab, setTab] = useState(TABS.some((t) => t[0] === initial) ? initial : "overview");
+    const go = (k) => { setTab(k); try { history.replaceState(null, "", "#" + k); } catch (e) {} window.scrollTo({ top: 0 }); };
+    const T = TABS.find((t) => t[0] === tab);
+    return html`<div class="max-w-[760px] mx-auto grid gap-5 wrap">
+      <header class="grid gap-2 pt-6">
+        <div class="text-[13px] tracking-wider text-[var(--ink2)]">11/07 HC Lotus 戦　東邦 GK 専用</div>
+        <h1 class="font-display text-[34px] leading-tight m-0">Lotus <span class="text-[var(--heat)]">GK</span> 攻略ボード</h1>
+        <p class="m-0 text-[14px] text-[var(--ink2)]">▶ のボタンを押すと、その場面の10秒前から動画が始まります。</p>
+      </header>
+      <nav class="sticky z-10 -mx-1 px-1 py-2 bg-[var(--bg)] flex gap-1.5 overflow-x-auto" style=${{ top: "env(safe-area-inset-top, 0px)" }} role="tablist" aria-label="ページの中の切りかえ">
+        ${TABS.map(([k, name, ic]) => html`<button type="button" role="tab" aria-selected=${tab === k} onClick=${() => go(k)}
+          class="shrink-0 inline-flex items-center gap-1.5 rounded-full px-3.5 py-2 text-[14.5px] font-bold border ${tab === k ? "bg-[var(--heat)] text-white border-[var(--heat)]" : "bg-[var(--card)] border-[var(--line)]"} focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-[var(--heat)]">
+          <${Icon} name=${ic} size=${16} />${name}</button>`)}
+      </nav>
+      <main class="pb-12"><${T[3]} /></main>
+      <footer class="text-[12.5px] text-[var(--ink2)] pb-10">データ：ヤスさん作成の HC Lotus スカウティングデータ（2026/11/01 新人戦）をそのまま表示しています。</footer>
+    </div>`;
+  }
+  ReactDOM.createRoot(document.getElementById("root")).render(html`<${App} />`);
+})();
+</script>
+</body>
+</html>
